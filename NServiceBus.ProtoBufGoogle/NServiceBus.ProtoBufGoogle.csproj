@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>net452</TargetFrameworks>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+    <RuntimeIdentifiers>win</RuntimeIdentifiers>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <DebugType>full</DebugType>
+    <DebugSymbols>True</DebugSymbols>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <DocumentationFile>$(ProjectDir)bin\$(ConfigurationName)\$(TargetFramework)\$(AssemblyName).xml</DocumentationFile>
+    <NoWarn>1591</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Google.Protobuf" Version="3.3.0" />
+    <PackageReference Include="NServiceBus" Version="6.2.1" />
+    <PackageReference Include="PepitaPackage" Version="1.21.4" />
+  </ItemGroup>
+  <Target Name="Nuget" AfterTargets="AfterBuild">
+    <ItemGroup>
+      <FilesToDelete Include="$(SolutionDir)NuGetBuild\**\*.*" />
+    </ItemGroup>
+    <Delete Files="@(FilesToDelete)" />
+    <Copy SourceFiles="$(OutputPath)NServiceBus.ProtoBufGoogle.dll" DestinationFolder="$(SolutionDir)NuGetBuild\lib\net452" />
+    <Copy SourceFiles="$(OutputPath)NServiceBus.ProtoBufGoogle.pdb" DestinationFolder="$(SolutionDir)NuGetBuild\lib\net452" />
+    <Copy SourceFiles="$(OutputPath)NServiceBus.ProtoBufGoogle.xml" DestinationFolder="$(SolutionDir)NuGetBuild\lib\net452" />
+    <Copy SourceFiles="$(ProjectDir)NServiceBus.ProtoBufGoogle.nuspec" DestinationFolder="$(SolutionDir)NuGetBuild" />
+    <PepitaPackage.CreatePackageTask NuGetBuildDirectory="$(SolutionDir)NuGetBuild" MetadataAssembly="$(OutputPath)\NServiceBus.ProtoBufGoogle.dll" />
+  </Target>
+</Project>

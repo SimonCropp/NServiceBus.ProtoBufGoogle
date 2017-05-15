@@ -1,0 +1,7 @@
+﻿syntax = "proto3";
+package ProtoBufGoogleSample;
+
+option csharp_namespace = "Sample";
+message MyMessage {
+	string Name = 1;
+}

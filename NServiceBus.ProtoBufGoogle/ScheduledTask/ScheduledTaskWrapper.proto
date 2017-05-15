@@ -1,0 +1,9 @@
+﻿syntax = "proto3";
+package NServiceBus.ProtoBufGoogle;
+
+option csharp_namespace = "NServiceBus.ProtoBufGoogle";
+message ScheduledTaskWrapper {
+	string TaskId = 1;
+	string Name = 2;
+	string Every = 3;
+}

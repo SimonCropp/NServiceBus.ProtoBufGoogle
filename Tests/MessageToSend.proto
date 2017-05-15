@@ -1,0 +1,7 @@
+﻿syntax = "proto3";
+package ProtoBufGoogleTests;
+
+option csharp_namespace = "Tests";
+message MessageToSend {
+	string Property = 1;
+}
