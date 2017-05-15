@@ -63,6 +63,10 @@ class MessageSerializer : IMessageSerializer
         var parser = parsers.GetOrAdd(messageType, type =>
         {
             var parserProperty = type.GetProperty("Parser", BindingFlags.Static| BindingFlags.Public);
+            if (parserProperty == null)
+            {
+                throw new Exception($"Expected to find a static property named 'Parser' on '{type.FullName}'.");
+            }
             return (MessageParser) parserProperty.GetValue(null);
         });
 
