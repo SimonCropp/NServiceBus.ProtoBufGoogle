@@ -20,4 +20,4 @@ https://docs.particular.net/nservicebus/serialization/protobufgoogle
 
 ## Icon
 
-<a href="https://thenounproject.com/term/robot/10415/" target="_blank">Robot</a> designed by <a href="https://thenounproject.com/Soto/" target="_blank">Sotirios Papavasilopoulos</a> from The Noun Project
+<a href="https://thenounproject.com/term/robot/826086/" target="_blank">Robot</a> designed by <a href="https://thenounproject.com/latyshevaoksana/" target="_blank">Oksana Latysheva</a> from The Noun Project
