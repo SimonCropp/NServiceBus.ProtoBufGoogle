@@ -1,4 +1,4 @@
-![Icon](https://raw.githubusercontent.com/SimonCropp/NServiceBus.ProtoBuf/master/Icon/package_icon.png)
+![Icon](https://raw.githubusercontent.com/SimonCropp/NServiceBus.ProtoBufGoogle/master/Icon/package_icon.png)
 
 NServiceBus.ProtoBufGoogle
 ===========================
