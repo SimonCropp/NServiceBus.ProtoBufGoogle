@@ -12,7 +12,7 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Google.Protobuf" Version="3.3.0" />
-    <PackageReference Include="NServiceBus" Version="6.3.0-alpha0153" />
+    <PackageReference Include="NServiceBus" Version="6.3.4" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\NServiceBus.ProtoBufGoogle\NServiceBus.ProtoBufGoogle.csproj" />

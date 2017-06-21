@@ -14,7 +14,7 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Google.Protobuf" Version="3.3.0" />
-    <PackageReference Include="NServiceBus" Version="6.2.1" />
+    <PackageReference Include="NServiceBus" Version="6.3.4" />
     <PackageReference Include="PepitaPackage" Version="1.21.4" />
   </ItemGroup>
   <Target Name="Nuget" AfterTargets="AfterBuild">
