@@ -2,20 +2,10 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFrameworks>net462</TargetFrameworks>
-    <RuntimeIdentifiers>win</RuntimeIdentifiers>
-    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-    <DebugType>full</DebugType>
-    <DebugSymbols>True</DebugSymbols>
-    <WarningLevel>4</WarningLevel>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Google.Protobuf" Version="3.3.0" />
-    <PackageReference Include="Google.Protobuf.Tools" Version="3.3.0" />
-    <PackageReference Include="NServiceBus" Version="6.3.4" />
-    <PackageReference Include="NUnit" Version="3.7.1" />
-  </ItemGroup>
-  <ItemGroup>
+    <PackageReference Include="NUnit" Version="*" />
     <ProjectReference Include="..\NServiceBus.ProtoBufGoogle\NServiceBus.ProtoBufGoogle.csproj" />
   </ItemGroup>
 </Project>

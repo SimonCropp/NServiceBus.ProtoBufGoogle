@@ -1,4 +1,4 @@
-﻿using NServiceBus.Configuration.AdvanceExtensibility;
+﻿using NServiceBus.Configuration.AdvancedExtensibility;
 using NServiceBus.Serialization;
 using NServiceBus.Settings;
 
@@ -6,7 +6,7 @@ namespace NServiceBus.ProtoBufGoogle
 {
 
     /// <summary>
-    /// Extensions for <see cref="SerializationExtensions{T}"/> to manipulate how messages are serialized via Jil.
+    /// Extensions for <see cref="SerializationExtensions{T}"/> to manipulate how messages are serialized via ProtoBuf.
     /// </summary>
     public static class ProtoBufConfigurationExtensions
     {
