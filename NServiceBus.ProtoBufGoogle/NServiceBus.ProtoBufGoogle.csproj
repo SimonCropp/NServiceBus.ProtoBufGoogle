@@ -6,10 +6,10 @@
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <NoWarn>1591</NoWarn>
     <PackageId>NServiceBus.ProtoBufGoogle</PackageId>
-    <AssemblyVersion>1.1.0</AssemblyVersion>
-    <FileVersion>1.1.0</FileVersion>
+    <AssemblyVersion>2.0.0</AssemblyVersion>
+    <FileVersion>2.0.0</FileVersion>
     <InformationalVersion>$(FileVersion)</InformationalVersion>
-    <PackageVersion>$(FileVersion)-beta003</PackageVersion>
+    <PackageVersion>$(FileVersion)-beta001</PackageVersion>
     <Authors>Simon Cropp</Authors>
     <PackageLicenseUrl>http://www.opensource.org/licenses/mit-license.php</PackageLicenseUrl>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
