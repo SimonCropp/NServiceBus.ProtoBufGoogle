@@ -8,6 +8,7 @@ using Google.Protobuf;
 using NServiceBus;
 using NServiceBus.ProtoBufGoogle;
 using NServiceBus.Serialization;
+using IMessage = Google.Protobuf.IMessage;
 
 class MessageSerializer : IMessageSerializer
 {
@@ -33,22 +34,20 @@ class MessageSerializer : IMessageSerializer
             throw new Exception("Interface based message are not supported. Create a class that implements the desired interface.");
         }
 
-        var task = message as ScheduledTask;
-        if (task != null)
+        if (message is ScheduledTask task)
         {
             var wrapper = ScheduledTaskHelper.ToWrapper(task);
             wrapper.WriteTo(stream);
             return;
         }
 
-        var protoMessage = message as Google.Protobuf.IMessage;
-        if (protoMessage != null)
+        if (message is IMessage protoMessage)
         {
             protoMessage.WriteTo(stream);
             return;
         }
 
-        throw new Exception($"Can only serialize {nameof(Google.Protobuf.IMessage)}.");
+        throw new Exception($"Can only serialize {nameof(IMessage)}.");
     }
 
     public object[] Deserialize(Stream stream, IList<Type> messageTypes)

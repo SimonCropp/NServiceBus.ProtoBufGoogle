@@ -1,27 +1,24 @@
 ﻿using System.Threading;
 using System.Threading.Tasks;
 using NServiceBus;
-using NServiceBus.Logging;
 using NServiceBus.ProtoBufGoogle;
-using NUnit.Framework;
 using Tests;
+using Xunit;
 
-[TestFixture]
 public class EndToEnd
 {
     static ManualResetEvent manualResetEvent = new ManualResetEvent(false);
-    string endpointName = "EndToEnd";
 
-    [Test]
+    [Fact]
     public async Task Write()
     {
-        var endpointConfiguration = new EndpointConfiguration(endpointName);
-        endpointConfiguration.UsePersistence<LearningPersistence>();
-        endpointConfiguration.UseTransport<LearningTransport>();
-        endpointConfiguration.UseSerialization<ProtoBufGoogleSerializer>();
+        var configuration = new EndpointConfiguration("EndToEnd");
+        configuration.UsePersistence<LearningPersistence>();
+        configuration.UseTransport<LearningTransport>();
+        configuration.UseSerialization<ProtoBufGoogleSerializer>();
         var typesToScan = TypeScanner.NestedTypes<EndToEnd>();
-        endpointConfiguration.SetTypesToScan(typesToScan);
-        var endpointInstance = await Endpoint.Start(endpointConfiguration)
+        configuration.SetTypesToScan(typesToScan);
+        var endpointInstance = await Endpoint.Start(configuration)
             .ConfigureAwait(false);
         var message = new MessageToSend
         {
@@ -36,13 +33,10 @@ public class EndToEnd
     class MessageHandler :
         IHandleMessages<MessageToSend>
     {
-        private static ILog log = LogManager.GetLogger<MessageHandler>();
         public Task Handle(MessageToSend message, IMessageHandlerContext context)
         {
-            log.Info(message.Property);
             manualResetEvent.Set();
             return Task.CompletedTask;
         }
     }
-
 }

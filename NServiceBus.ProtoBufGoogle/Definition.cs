@@ -16,6 +16,7 @@ namespace NServiceBus.ProtoBufGoogle
         /// </summary>
         public override Func<IMessageMapper, IMessageSerializer> Configure(ReadOnlySettings settings)
         {
+            Guard.AgainstNull(settings, nameof(settings));
             return mapper =>
             {
                 var contentTypeKey = settings.GetContentTypeKey();

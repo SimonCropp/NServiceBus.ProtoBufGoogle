@@ -4,13 +4,11 @@ using NServiceBus.Settings;
 
 namespace NServiceBus.ProtoBufGoogle
 {
-
     /// <summary>
     /// Extensions for <see cref="SerializationExtensions{T}"/> to manipulate how messages are serialized via ProtoBuf.
     /// </summary>
     public static class ProtoBufConfigurationExtensions
     {
-
         /// <summary>
         /// Configures string to use for <see cref="Headers.ContentType"/> headers.
         /// </summary>
