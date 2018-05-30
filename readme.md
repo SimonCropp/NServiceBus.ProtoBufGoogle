@@ -1,4 +1,4 @@
-![Icon](https://raw.githubusercontent.com/SimonCropp/NServiceBus.ProtoBufGoogle/master/Icon/package_icon.png)
+![Icon](https://raw.githubusercontent.com/NServiceBusExtensions/NServiceBus.ProtoBufGoogle/master/icon.png)
 
 NServiceBus.ProtoBufGoogle
 ===========================
@@ -15,7 +15,7 @@ https://nuget.org/packages/NServiceBus.ProtoBufGoogle/
 
 ## Documentation
 
-https://docs.particular.net/nservicebus/serialization/protobufgoogle
+https://docs.particular.net/nuget/NServiceBus.ProtoBufGoogle
 
 
 ## Icon
