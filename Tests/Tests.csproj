@@ -5,7 +5,7 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Xunit" Version="2.4.0" />
-    <PackageReference Include="xunit.runner.visualstudio" Version="2.3.1" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.0" />
     <ProjectReference Include="..\NServiceBus.ProtoBufGoogle\NServiceBus.ProtoBufGoogle.csproj" />
   </ItemGroup>
 </Project>
