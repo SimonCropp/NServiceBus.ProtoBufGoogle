@@ -11,6 +11,7 @@
     <PackageTags>NServiceBus, ProtoBuf</PackageTags>
     <PackageIconUrl>https://raw.githubusercontent.com/NServiceBusExtensions/NServiceBus.ProtoBufGoogle/master/icon.png</PackageIconUrl>
     <PackageProjectUrl>https://docs.particular.net/nuget/NServiceBus.ProtoBufGoogle</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/NServiceBusExtensions/NServiceBus.ProtoBufGoogle</RepositoryUrl>
     <PackageOutputPath>..\nugets</PackageOutputPath>
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>../key.snk</AssemblyOriginatorKeyFile>
