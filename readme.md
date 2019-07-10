@@ -29,8 +29,6 @@ Thanks to all the backing developers! Support this project by [becoming a patron
 
 https://nuget.org/packages/NServiceBus.ProtoBufGoogle/
 
-    PM> Install-Package NServiceBus.ProtoBufGoogle
-
 
 ## Documentation
 
@@ -39,4 +37,4 @@ https://docs.particular.net/nuget/NServiceBus.ProtoBufGoogle
 
 ## Icon
 
-<a href="https://thenounproject.com/term/robot/826086/" target="_blank">Robot</a> designed by <a href="https://thenounproject.com/latyshevaoksana/" target="_blank">Oksana Latysheva</a> from The Noun Project
+[Robot](https://thenounproject.com/term/robot/826086/) designed by [Oksana Latysheva](https://thenounproject.com/latyshevaoksana/) from [The Noun Project](https://thenounproject.com).
