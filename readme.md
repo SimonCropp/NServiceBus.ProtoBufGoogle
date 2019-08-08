@@ -1,4 +1,4 @@
-<img src="https://raw.github.com/NServiceBusExtensions/NServiceBus.ProtoBufGoogle/master/src/icon.png" height="25px"> Add support for [NServiceBus](https://docs.particular.net/nservicebus/) message serialization via [Google ProtoBuf](https://github.com/google/protobuf)
+<img src="/src/icon.png" height="25px"> Add support for [NServiceBus](https://docs.particular.net/nservicebus/) message serialization via [Google ProtoBuf](https://github.com/google/protobuf)
 
 <!--- StartOpenCollectiveBackers -->
 
@@ -25,9 +25,9 @@ Thanks to all the backing developers! Support this project by [becoming a patron
 
 <a href="#" id="endofbacking"></a>
 
-## The NuGet package [![NuGet Status](https://img.shields.io/nuget/v/NServiceBus.ProtoBufGoogle.svg)](https://www.nuget.org/packages/NServiceBus.ProtoBufGoogle/)
+## NuGet package
 
-https://nuget.org/packages/NServiceBus.ProtoBufGoogle/
+https://nuget.org/packages/NServiceBus.ProtoBufGoogle/ [![NuGet Status](https://img.shields.io/nuget/v/NServiceBus.ProtoBufGoogle.svg)](https://www.nuget.org/packages/NServiceBus.ProtoBufGoogle/)
 
 
 ## Documentation
