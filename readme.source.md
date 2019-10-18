@@ -37,7 +37,14 @@ Thanks to all the backing developers! Support this project by [becoming a patron
 
 snippet: ProtobufSerialization
 
-include: interface-not-supported
+This serializer does not support [messages defined as interfaces](https://docs.particular.net/nservicebus/messaging/messages-as-interfaces.md). If an explicit interface is sent, an exception will be thrown with the following message:
+
+```
+Interface based message are not supported.
+Create a class that implements the desired interface
+```
+
+Instead, use a public class with the same contract as the interface. The class can optionally implement any required interfaces.
 
 
 ### Custom Settings
