@@ -10,7 +10,8 @@ using NServiceBus.ProtoBufGoogle;
 using NServiceBus.Serialization;
 using IMessage = Google.Protobuf.IMessage;
 
-class MessageSerializer : IMessageSerializer
+class MessageSerializer :
+    IMessageSerializer
 {
     ConcurrentDictionary<Type, MessageParser> parsers = new ConcurrentDictionary<Type, MessageParser>();
 

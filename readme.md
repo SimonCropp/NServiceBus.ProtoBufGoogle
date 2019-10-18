@@ -5,10 +5,25 @@ Source File: /readme.source.md
 To change this file edit the source file and then run MarkdownSnippets.
 -->
 
-<img src="/src/icon.png" height="25px"> Add support for [NServiceBus](https://docs.particular.net/nservicebus/) message serialization via [Google ProtoBuf](https://github.com/google/protobuf)
+# <img src="/src/icon.png" height="30px"> NServiceBus.ProtoBufGoogle
 
+Add support for [NServiceBus](https://docs.particular.net/nservicebus/) message serialization via [Google ProtoBuf](https://github.com/google/protobuf)
 
-include: protobufmultiple
+[![Build status](https://ci.appveyor.com/api/projects/status/ad7ibwiqio3ocso4/branch/master?svg=true)](https://ci.appveyor.com/project/SimonCropp/NServiceBus.ProtoBufGoogle)
+[![NuGet Status](https://img.shields.io/nuget/v/NServiceBus.ProtoBufGoogle.svg?label=nuget:NServiceBus.ProtoBufGoogle&cacheSeconds=86400)](https://www.nuget.org/packages/NServiceBus.ProtoBufGoogle/)
+
+<!-- toc -->
+## Contents
+
+  * [Community backed](#community-backed)
+    * [Sponsors](#sponsors)
+    * [Patrons](#patrons)
+  * [Usage](#usage)
+    * [Custom Settings](#custom-settings)
+    * [Custom content key](#custom-content-key)
+  * [More Info](#more-info)
+<!-- endtoc -->
+
 
 <!--- StartOpenCollectiveBackers -->
 
@@ -35,10 +50,6 @@ Thanks to all the backing developers! Support this project by [becoming a patron
 
 <a href="#" id="endofbacking"></a>
 
-## NuGet package
-
-https://nuget.org/packages/NServiceBus.ProtoBufGoogle/ [![NuGet Status](https://img.shields.io/nuget/v/NServiceBus.ProtoBufGoogle.svg)](https://www.nuget.org/packages/NServiceBus.ProtoBufGoogle/)
-
 
 ## Usage
 
@@ -57,7 +68,10 @@ include: interface-not-supported
 
 Customizes the instance of `SerializerOptions` used for serialization.
 
-include: custom-contenttype-key
+
+### Custom content key
+
+When using [additional deserializers](https://docs.particular.net/nservicebus/serialization/#specifying-additional-deserializers) or transitioning between different versions of the same serializer it can be helpful to take explicit control over the content type a serializer passes to NServiceBus (to be used for the [ContentType header](https://docs.particular.net/nservicebus/messaging/headers.md#serialization-headers-nservicebus-contenttype)).
 
 <!-- snippet: ProtoBufContentTypeKey -->
 <a id='snippet-protobufcontenttypekey'/></a>
@@ -68,7 +82,19 @@ serialization.ContentTypeKey("custom-key");
 <sup>[snippet source](/src/Tests/Snippets/Usage.cs#L17-L22) / [anchor](#snippet-protobufcontenttypekey)</sup>
 <!-- endsnippet -->
 
-include: protobufgoogleinfo
+
+## More Info
+
+For more information on Google Protocol Buffers see
+
+ * [C# Tutorial](https://developers.google.com/protocol-buffers/docs/csharptutorial)
+ * [Language Guide](https://developers.google.com/protocol-buffers/docs/proto3)
+ * [Generated Code](https://developers.google.com/protocol-buffers/docs/reference/csharp-generated)
+
+
+## Release Notes
+
+See [closed milestones](../../milestones?state=closed).
 
 
 ## Icon

@@ -1,6 +1,7 @@
 namespace Sample
 {
-    public partial class MyMessage : NServiceBus.IMessage
+    public partial class MyMessage :
+        NServiceBus.IMessage
     {
     }
 }
