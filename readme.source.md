@@ -1,9 +1,9 @@
 # <img src="/src/icon.png" height="30px"> NServiceBus.ProtoBufGoogle
 
-Add support for [NServiceBus](https://docs.particular.net/nservicebus/) message serialization via [Google ProtoBuf](https://github.com/google/protobuf)
-
 [![Build status](https://ci.appveyor.com/api/projects/status/ad7ibwiqio3ocso4/branch/master?svg=true)](https://ci.appveyor.com/project/SimonCropp/NServiceBus.ProtoBufGoogle)
 [![NuGet Status](https://img.shields.io/nuget/v/NServiceBus.ProtoBufGoogle.svg?label=nuget:NServiceBus.ProtoBufGoogle&cacheSeconds=86400)](https://www.nuget.org/packages/NServiceBus.ProtoBufGoogle/)
+
+Add support for [NServiceBus](https://docs.particular.net/nservicebus/) message serialization via [Google ProtoBuf](https://github.com/google/protobuf)
 
 toc
 
