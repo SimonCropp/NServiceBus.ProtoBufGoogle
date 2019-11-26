@@ -1,6 +1,7 @@
 namespace NServiceBus.ProtoBufGoogle
 {
-    public partial class ScheduledTaskWrapper : NServiceBus.IMessage
+    public partial class ScheduledTaskWrapper :
+        IMessage
     {
     }
 }
