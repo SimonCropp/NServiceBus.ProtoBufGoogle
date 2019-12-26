@@ -3,20 +3,20 @@ using NServiceBus.ProtoBufGoogle;
 
 class Usage
 {
-    Usage(EndpointConfiguration endpointConfiguration)
+    Usage(EndpointConfiguration configuration)
     {
         #region ProtoBufSerialization
 
-        endpointConfiguration.UseSerialization<ProtoBufGoogleSerializer>();
+        configuration.UseSerialization<ProtoBufGoogleSerializer>();
 
         #endregion
     }
 
-    void ContentTypeKey(EndpointConfiguration endpointConfiguration)
+    void ContentTypeKey(EndpointConfiguration configuration)
     {
         #region ProtoBufContentTypeKey
 
-        var serialization = endpointConfiguration.UseSerialization<ProtoBufGoogleSerializer>();
+        var serialization = configuration.UseSerialization<ProtoBufGoogleSerializer>();
         serialization.ContentTypeKey("custom-key");
 
         #endregion
