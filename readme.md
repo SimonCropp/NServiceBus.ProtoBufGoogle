@@ -30,7 +30,7 @@ Add support for [NServiceBus](https://docs.particular.net/nservicebus/) message 
 
 ## Community backed
 
-**It is expected that all developers [become a Patron](https://opencollective.com/nservicebusextensions/order/6976) to use any of these libraries. [Go to licensing FAQ](https://github.com/NServiceBusExtensions/Home/blob/master/readme.md#licensingpatron-faq)**
+**It is expected that all developers [become a Patron](https://opencollective.com/nservicebusextensions/order/6976) to use any of these libraries. [Go to licensing FAQ](https://github.com/NServiceBusExtensions/Home/#licensingpatron-faq)**
 
 
 ### Sponsors
@@ -49,12 +49,17 @@ Thanks to all the backing developers! Support this project by [becoming a patron
 <a href="#" id="endofbacking"></a>
 
 
+## NuGet package
+
+https://nuget.org/packages/NServiceBus.ProtoBufGoogle/
+
+
 ## Usage
 
 <!-- snippet: ProtobufSerialization -->
 <a id='snippet-protobufserialization'/></a>
 ```cs
-endpointConfiguration.UseSerialization<ProtoBufGoogleSerializer>();
+configuration.UseSerialization<ProtoBufGoogleSerializer>();
 ```
 <sup><a href='/src/Tests/Snippets/Usage.cs#L8-L12' title='File snippet `protobufserialization` was extracted from'>snippet source</a> | <a href='#snippet-protobufserialization' title='Navigate to start of snippet `protobufserialization`'>anchor</a></sup>
 <!-- endsnippet -->
@@ -81,7 +86,7 @@ When using [additional deserializers](https://docs.particular.net/nservicebus/se
 <!-- snippet: ProtoBufContentTypeKey -->
 <a id='snippet-protobufcontenttypekey'/></a>
 ```cs
-var serialization = endpointConfiguration.UseSerialization<ProtoBufGoogleSerializer>();
+var serialization = configuration.UseSerialization<ProtoBufGoogleSerializer>();
 serialization.ContentTypeKey("custom-key");
 ```
 <sup><a href='/src/Tests/Snippets/Usage.cs#L17-L22' title='File snippet `protobufcontenttypekey` was extracted from'>snippet source</a> | <a href='#snippet-protobufcontenttypekey' title='Navigate to start of snippet `protobufcontenttypekey`'>anchor</a></sup>
