@@ -19,6 +19,7 @@ Add support for [NServiceBus](https://docs.particular.net/nservicebus/) message 
   * [Usage](#usage)
     * [Custom Settings](#custom-settings)
     * [Custom content key](#custom-content-key)
+  * [Security contact information](#security-contact-information)
   * [More Info](#more-info)<!-- endtoc -->
 
 <!--- StartOpenCollectiveBackers -->
@@ -83,6 +84,11 @@ serialization.ContentTypeKey("custom-key");
 <!-- endsnippet -->
 
 
+## Security contact information
+
+To report a security vulnerability, use the [Tidelift security contact](https://tidelift.com/security). Tidelift will coordinate the fix and disclosure.
+
+
 ## More Info
 
 For more information on Google Protocol Buffers see
@@ -90,11 +96,6 @@ For more information on Google Protocol Buffers see
  * [C# Tutorial](https://developers.google.com/protocol-buffers/docs/csharptutorial)
  * [Language Guide](https://developers.google.com/protocol-buffers/docs/proto3)
  * [Generated Code](https://developers.google.com/protocol-buffers/docs/reference/csharp-generated)
-
-
-## Release Notes
-
-See [closed milestones](../../milestones?state=closed).
 
 
 ## Icon
