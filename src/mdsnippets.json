@@ -1,3 +1,4 @@
 ﻿{
-  "TocExcludes": [ "NuGet package", "Release Notes", "Icon" ]
+  "TocExcludes": [ "NuGet package", "Release Notes", "Icon" ],
+  "ValidateContent": true
 }
