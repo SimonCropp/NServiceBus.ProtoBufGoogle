@@ -64,7 +64,7 @@ https://nuget.org/packages/NServiceBus.ProtoBufGoogle/
 ## Usage
 
 <!-- snippet: ProtobufSerialization -->
-<a id='snippet-protobufserialization'/></a>
+<a id='snippet-protobufserialization'></a>
 ```cs
 configuration.UseSerialization<ProtoBufGoogleSerializer>();
 ```
@@ -91,7 +91,7 @@ Customizes the instance of `SerializerOptions` used for serialization.
 When using [additional deserializers](https://docs.particular.net/nservicebus/serialization/#specifying-additional-deserializers) or transitioning between different versions of the same serializer it can be helpful to take explicit control over the content type a serializer passes to NServiceBus (to be used for the [ContentType header](https://docs.particular.net/nservicebus/messaging/headers#serialization-headers-nservicebus-contenttype)).
 
 <!-- snippet: ProtoBufContentTypeKey -->
-<a id='snippet-protobufcontenttypekey'/></a>
+<a id='snippet-protobufcontenttypekey'></a>
 ```cs
 var serialization = configuration.UseSerialization<ProtoBufGoogleSerializer>();
 serialization.ContentTypeKey("custom-key");
