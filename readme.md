@@ -23,7 +23,7 @@ Add support for [NServiceBus](https://docs.particular.net/nservicebus/) message 
     * [Custom Settings](#custom-settings)
     * [Custom content key](#custom-content-key)
   * [Security contact information](#security-contact-information)
-  * [More Info](#more-info)<!-- endtoc -->
+  * [More Info](#more-info)<!-- endToc -->
 
 <!--- StartOpenCollectiveBackers -->
 
@@ -69,7 +69,7 @@ https://nuget.org/packages/NServiceBus.ProtoBufGoogle/
 configuration.UseSerialization<ProtoBufGoogleSerializer>();
 ```
 <sup><a href='/src/Tests/Snippets/Usage.cs#L8-L12' title='File snippet `protobufserialization` was extracted from'>snippet source</a> | <a href='#snippet-protobufserialization' title='Navigate to start of snippet `protobufserialization`'>anchor</a></sup>
-<!-- endsnippet -->
+<!-- endSnippet -->
 
 This serializer does not support [messages defined as interfaces](https://docs.particular.net/nservicebus/messaging/messages-as-interfaces). If an explicit interface is sent, an exception will be thrown with the following message:
 
@@ -97,7 +97,7 @@ var serialization = configuration.UseSerialization<ProtoBufGoogleSerializer>();
 serialization.ContentTypeKey("custom-key");
 ```
 <sup><a href='/src/Tests/Snippets/Usage.cs#L17-L22' title='File snippet `protobufcontenttypekey` was extracted from'>snippet source</a> | <a href='#snippet-protobufcontenttypekey' title='Navigate to start of snippet `protobufcontenttypekey`'>anchor</a></sup>
-<!-- endsnippet -->
+<!-- endSnippet -->
 
 
 ## Security contact information
