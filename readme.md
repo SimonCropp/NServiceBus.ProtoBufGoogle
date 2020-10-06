@@ -64,11 +64,11 @@ https://nuget.org/packages/NServiceBus.ProtoBufGoogle/
 ## Usage
 
 <!-- snippet: ProtobufSerialization -->
-<a id='snippet-protobufserialization'></a>
+<a id='ecd371b6'></a>
 ```cs
 configuration.UseSerialization<ProtoBufGoogleSerializer>();
 ```
-<sup><a href='/src/Tests/Snippets/Usage.cs#L8-L12' title='File snippet `protobufserialization` was extracted from'>snippet source</a> | <a href='#snippet-protobufserialization' title='Navigate to start of snippet `protobufserialization`'>anchor</a></sup>
+<sup><a href='/src/Tests/Snippets/Usage.cs#L8-L12' title='Snippet source file'>snippet source</a> | <a href='#ecd371b6' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 This serializer does not support [messages defined as interfaces](https://docs.particular.net/nservicebus/messaging/messages-as-interfaces). If an explicit interface is sent, an exception will be thrown with the following message:
@@ -91,12 +91,12 @@ Customizes the instance of `SerializerOptions` used for serialization.
 When using [additional deserializers](https://docs.particular.net/nservicebus/serialization/#specifying-additional-deserializers) or transitioning between different versions of the same serializer it can be helpful to take explicit control over the content type a serializer passes to NServiceBus (to be used for the [ContentType header](https://docs.particular.net/nservicebus/messaging/headers#serialization-headers-nservicebus-contenttype)).
 
 <!-- snippet: ProtoBufContentTypeKey -->
-<a id='snippet-protobufcontenttypekey'></a>
+<a id='ebc14e22'></a>
 ```cs
 var serialization = configuration.UseSerialization<ProtoBufGoogleSerializer>();
 serialization.ContentTypeKey("custom-key");
 ```
-<sup><a href='/src/Tests/Snippets/Usage.cs#L17-L22' title='File snippet `protobufcontenttypekey` was extracted from'>snippet source</a> | <a href='#snippet-protobufcontenttypekey' title='Navigate to start of snippet `protobufcontenttypekey`'>anchor</a></sup>
+<sup><a href='/src/Tests/Snippets/Usage.cs#L17-L22' title='Snippet source file'>snippet source</a> | <a href='#ebc14e22' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 
