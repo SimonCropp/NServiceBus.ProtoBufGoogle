@@ -64,11 +64,11 @@ https://nuget.org/packages/NServiceBus.ProtoBufGoogle/
 ## Usage
 
 <!-- snippet: ProtobufSerialization -->
-<a id='protobufserialization'></a>
+<a id='snippet-protobufserialization'></a>
 ```cs
 configuration.UseSerialization<ProtoBufGoogleSerializer>();
 ```
-<sup><a href='/src/Tests/Snippets/Usage.cs#L8-L12' title='Snippet source file'>snippet source</a> | <a href='#protobufserialization' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/src/Tests/Snippets/Usage.cs#L8-L12' title='Snippet source file'>snippet source</a> | <a href='#snippet-protobufserialization' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 This serializer does not support [messages defined as interfaces](https://docs.particular.net/nservicebus/messaging/messages-as-interfaces). If an explicit interface is sent, an exception will be thrown with the following message:
@@ -91,12 +91,12 @@ Customizes the instance of `SerializerOptions` used for serialization.
 When using [additional deserializers](https://docs.particular.net/nservicebus/serialization/#specifying-additional-deserializers) or transitioning between different versions of the same serializer it can be helpful to take explicit control over the content type a serializer passes to NServiceBus (to be used for the [ContentType header](https://docs.particular.net/nservicebus/messaging/headers#serialization-headers-nservicebus-contenttype)).
 
 <!-- snippet: ProtoBufContentTypeKey -->
-<a id='protobufcontenttypekey'></a>
+<a id='snippet-protobufcontenttypekey'></a>
 ```cs
 var serialization = configuration.UseSerialization<ProtoBufGoogleSerializer>();
 serialization.ContentTypeKey("custom-key");
 ```
-<sup><a href='/src/Tests/Snippets/Usage.cs#L17-L22' title='Snippet source file'>snippet source</a> | <a href='#protobufcontenttypekey' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/src/Tests/Snippets/Usage.cs#L17-L22' title='Snippet source file'>snippet source</a> | <a href='#snippet-protobufcontenttypekey' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 
