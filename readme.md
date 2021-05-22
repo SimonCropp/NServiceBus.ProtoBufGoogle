@@ -12,19 +12,6 @@ To change this file edit the source file and then run MarkdownSnippets.
 
 Add support for [NServiceBus](https://docs.particular.net/nservicebus/) message serialization via [Google ProtoBuf](https://github.com/google/protobuf).
 
-<!-- toc -->
-## Contents
-
-  * [Community backed](#community-backed)
-    * [Sponsors](#sponsors)
-    * [Patrons](#patrons)
-  * [Support via TideLift](#support-via-tidelift)
-  * [Usage](#usage)
-    * [Custom Settings](#custom-settings)
-    * [Custom content key](#custom-content-key)
-  * [Security contact information](#security-contact-information)
-  * [More Info](#more-info)<!-- endToc -->
-
 <!--- StartOpenCollectiveBackers -->
 
 [Already a Patron? skip past this section](#endofbacking)
@@ -49,11 +36,6 @@ Thanks to all the backing developers. Support this project by [becoming a patron
 <a href="#" id="endofbacking"></a>
 
 <!--- EndOpenCollectiveBackers -->
-
-
-## Support via TideLift
-
-Support is available via a [Tidelift Subscription](https://tidelift.com/subscription/pkg/nuget-nservicebus.protobufgoogle?utm_source=nuget-nservicebus.protobufgoogle&utm_medium=referral&utm_campaign=enterprise).
 
 
 ## NuGet package
@@ -98,11 +80,6 @@ serialization.ContentTypeKey("custom-key");
 ```
 <sup><a href='/src/Tests/Snippets/Usage.cs#L17-L22' title='Snippet source file'>snippet source</a> | <a href='#snippet-protobufcontenttypekey' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
-
-
-## Security contact information
-
-To report a security vulnerability, use the [Tidelift security contact](https://tidelift.com/security). Tidelift will coordinate the fix and disclosure.
 
 
 ## More Info
